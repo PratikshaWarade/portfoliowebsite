@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8649710e2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img style="height:4cm" src="images/WomennImage.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi,<br> I'm <span >Pratiksha</span>Warade</h1>
+                <p>Post Graduate Student</p>
+            </div>
+        </div>
+    </div>
+    <!--                about               -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ABCD.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="ran">
+                        Hello I'm Pratiksha Warade, I belong to Malkapur, Maharashtra. Currently, I am pursuing post graduation degree in MCA.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Core Java</li>
+                            <li><span>Web Development</span><br>HTML5, CSS3, Java Script</li>
+                            <li><span>Database</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Pursuing</span><br>D Y Patil Institute of Computer Application and Management Akurdi,Pune<br>Master of Computer Application (MCA) </li>
+                            <li><span>2021</span><br>VIdnyan Mahavidyalaya Malkapur<br>Graduate B.Sc(Computer) with 73.44%</li>
+                            <li><span>2018</span><br>Jyoti Janolkar Collage,Akola<br>HSC ( 12th ) with 57.69%</li>
+                            <li><span>2016</span><br>Nutan Mahavidyalaya, Malkapur<br>SSC (10th) with 89%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li><span>IIT Bombay</span><br>Python<br>Programming in Python</li>
+                            <li><span>Front End Developement</span><br>JavaScript<br></li>
+                            <li><span>IIT Bombay</span><br>Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>April2023</span><br>Code Clause<br>Web Development Internship</li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--        Services         -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                     <a href="https://github.com/PratikshaWarade" target="_blank">
+                    <p>The primary goal of this project is to do all order online without any hustle and bustle. This project based upon 
+                        canteen which come in collage and office. In that the student or employee just download the app an they register
+                        them as a customer ad give order to canteen owner through this application. The owner accept order and these order 
+                        goes to student or employee who order the food according to their table no.</p>
+                    <a href="https://github.com/PratikshaWarade" target="_blank">Project Source Code</a></a>
+                </div>
+                <div>
+                    <a href="https://github.com/PratikshaWarade" target="_blank">
+                    <p>The goal of agrocraft website to connect farmer and customer directly through website. Where the customer directly 
+                        order fruits, vegetables through farmers according to their area and availability. Customer don't need to go outside 
+                        and purchase vegetables and fruits. Farmer also connect directly to customer and give the vegetables and fruits by their 
+                        values.</p>
+                    <a href="https://github.com/PratikshaWarade" target="_blank">Project Source Code</a></a>
+                </div>
+                </div>
+
+        </div>
+    </div>
+    <!--         Contact            -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href=" mailto: pratikshawarade20@gmail.com"><i class="fa-solid fa-envelope"></i></a> pratikshawarade20@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91-8390136462</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/pratiksha-warade-a7b521217" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/PratikshaWarade" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                       
+                    </div>
+                    <a href="Resume_Pratiksha.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn1">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Pratiksha</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0"
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyipQspmgOCNnZlcJwYiCHrjJOAPrNoTPEAlZ7XOj0KB0wXrRu-R8hcfPUlz53FFSmRpA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    
+</body>
+</html>
